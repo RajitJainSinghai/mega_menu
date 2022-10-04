@@ -1,0 +1,317 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+section.mega_menus {
+  width: 100%;
+  background: #a3542e;
+}
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+.dropbtn {
+  background-color: inherit;
+  transition: 0.3s;
+  color: white;
+  
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #dca736;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #a3542e;
+ width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  transition: all 1s ease-in;
+  overflow:hidden;
+  height:0;
+  left: 0;
+}
+
+.dropdown-content .header {
+  background-color: #a3542e;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*********************************************/
+.dropdown:hover .dropdown-content {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+
+}
+
+.dropdown:hover .dropbtn {
+  color:  white;
+  transition: 0.3s;
+}
+#anker_inside {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  padding: 10px 40px;
+  width: 300px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.column a:hover, #h3_anker_tag:hover {
+  background-color: #a3542e;
+  color: #dca736;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: auto;
+  width: 20%;
+  display: grid;
+  justify-content: end;
+}
+.column123 {
+  float: left;
+  padding: 10px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: justify; */
+  justify-content: center;
+  align-items: center;
+}
+h3#h3_anker_tag {
+  margin: 0;
+  width: 180px;
+}
+.row1 {
+  margin: 0 auto;
+  width: 68%;
+  margin: 0 auto;
+}
+
+
+/********************* mobile Menu*********************/
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background: #a3542e;
+    display: block;
+    justify-content: center;
+    width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #a3542e;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b16642;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #b16642;;
+  color: #dca736;
+}
+
+.dropdown-content a:hover {
+  background-color: #a3542e;
+  color: #dca736;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #dca736;
+}
+
+.collapsible {
+        background-color: #b16642;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .collapsible:hover {
+      color:#dca736 ;
+    }
+    
+ 
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+    background-color: #b16642;
+   
+    }
+    span#plus_sign {
+    float: right;
+    font-size: 20px;
+}
+a#anker_inside {
+  color: #dddddd;
+  width: 100%;
+  padding: 12px 7px 10px 4px;
+  font-size: 15px;
+
+}
+
+section.glideck_mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+  a.active {
+    margin-top: 60px;
+}
+  .topnav.responsive 
+  {
+    position: relative;
+   background: #A35430;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+  }
+  .topnav.responsive a:hover {
+    color: #dca736; 
+  }
+
+
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+  }
+  section.glideck_mobile_menu {
+    display: block;
+}
+section.mega_menus {
+    display: none;
+}
+}
